@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mail-content-name {
+    width: 80%;
+    margin: 0 10%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mail-logo {
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 160px;
+    margin-bottom: 50px;
+    background-image: url(/images/sagasoft_mail_logo.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mail-name {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 100px;
+    word-spacing: 20px;
+    margin-bottom: 70px;
+
+}
+
+.muliple-downloders {
+    display: flex;
+}
+
+.multidownloders {
+    display: flex;
+    position: relative;
+    padding: 10px 30px;
+    margin-left: 70px;
+    background-color: #f5f8f9;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.content {
+    font-family: "Rubik", sans-serif;
+    display: inline;
+    margin-left: 10px;
+}
+
+.multidownloders .content p {
+    font-size: 14px
+}
+
+.multidownloders .content p span {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.windows-log {
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/windows-brands-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lunix-log {
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/linux-brands-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.mac-log {
+    width: 40px;
+    height: 40px;
+    background-image: url(images/apple-brands-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.multidownloders:hover {
+    background-color: #bbbaba;
+}

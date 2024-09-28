@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main-viwe-iphone-main {
+  width: 100%;
+  /* background-color: red; */
+  height: 5000px;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+}
+
+.content-1 {
+  width: 600px;
+  height: 630px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+  left: 90px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.content-1 p span {
+  color: #f8931f;
+}
+
+/* asnimation background in css */
+
+.animation-overlay {
+  /* background-color: #f8931f; */
+  width: 410px;
+  height: 410px;
+  position: sticky;
+  margin-top: 100px;
+  margin-left: 250px;
+  top: 100px;
+  padding: 10px;
+}
+
+.animation-background {
+  width: 400px;
+  height: 400px;
+  /* background-color: blue; */
+}
+
+
+/* background animation for animation overlay */
+:root {
+  --side: 420px;
+  --l: 350px;
+  --num: 10;
+  --dur: 10s;
+}
+
+
+
+.plane {
+  width: var(--side);
+  height: var(--side);
+  transform-style: preserve-3d;
+}
+
+.plane.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(60deg) rotateZ(-30deg);
+  animation: rotate 30s infinite linear;
+}
+
+.circle {
+  width: var(--side);
+  height: var(--side);
+  position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 60px #179ed5, inset 0 0 60px rgb(0, 204, 255);
+}
+
+.circle::before,
+.circle::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #f8931f;
+  box-sizing: border-box;
+  box-shadow: 0 0 100px 2px #179ed5;
+}
+
+.circle::before {
+  transform: translateZ(calc(-1 * var(--l)));
+}
+
+.circle::after {
+  transform: translateZ(var(--l));
+}
+
+.circle:nth-child(1) {
+  transform: rotateZ(72deg) rotateX(63.435deg);
+}
+
+.circle:nth-child(2) {
+  transform: rotateZ(144deg) rotateX(63.435deg);
+}
+
+.circle:nth-child(3) {
+  transform: rotateZ(216deg) rotateX(63.435deg);
+}
+
+.circle:nth-child(4) {
+  transform: rotateZ(288deg) rotateX(63.435deg);
+}
+
+.circle:nth-child(5) {
+  transform: rotateZ(360deg) rotateX(63.435deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* iphone setup */
+
+.content-1-iphone {
+  position: relative;
+  top: -100px;
+  right: -60px;
+  width: 300px;
+  height: 600px;
+  /* background-color: red; */
+  background-image: url(/images/1a-Write-with-AI.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
