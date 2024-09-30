@@ -2,7 +2,7 @@
 
 .main-viwe-iphone-main {
   width: 100%;
-  /* background-color: red; */
+  background-color: red;
   height: 5000px;
   margin-top: 100px;
   position: relative;
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: green; */
+  background-color: green;
   left: 90px;
 
   font-family: "Lato", sans-serif;
@@ -151,7 +151,7 @@
   width: 300px;
   height: 600px;
   /* background-color: red; */
-  background-image: url(/images/1a-Write-with-AI.webp);
+  background-image: url(../images/1a-Write-with-AI.webp);
   background-repeat: no-repeat;
   background-size: contain;
 }

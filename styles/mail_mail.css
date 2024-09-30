@@ -21,7 +21,7 @@
     width: 300px;
     height: 160px;
     margin-bottom: 50px;
-    background-image: url(/images/sagasoft_mail_logo.jpeg);
+    background-image: url(../images/sagasoft_mail_logo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -69,7 +69,7 @@
 .windows-log {
     width: 40px;
     height: 40px;
-    background-image: url(/images/windows-brands-solid.svg);
+    background-image: url(../images/windows-brands-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -77,7 +77,7 @@
 .lunix-log {
     width: 40px;
     height: 40px;
-    background-image: url(/images/linux-brands-solid.svg);
+    background-image: url(../images/linux-brands-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -86,7 +86,7 @@
 .mac-log {
     width: 40px;
     height: 40px;
-    background-image: url(images/apple-brands-solid.svg);
+    background-image: url(../images/apple-brands-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
