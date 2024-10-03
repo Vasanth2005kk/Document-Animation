@@ -101,7 +101,7 @@
 .flags {
     width: 40px;
     height: 40px;
-    background-image: url(/images/us.jpg);
+    background-image: url(../images/us.jpg);
     background-size: contain;
     border-radius: 50%;
 }
