@@ -1,0 +1,114 @@
+.discover-main-box {
+    width: 92%;
+    height: 120vh;
+    background-color: black;
+    border-radius: 33px;
+    position: relative;
+    left: 4%;
+}
+
+.discover-left {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-text {
+    color: white;
+    padding-left: 13%;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    text-align: left;
+    font-size: 76px;
+    line-height: 1.184em;
+    font-weight: 700;
+}
+.discover-downlod{
+    background-color: white;
+    width: 20%;
+    color: black;
+    padding: 28px 34px;
+    border-radius: 40px;
+    position: relative;
+    text-align: center;
+    position: absolute;
+    top:75%;
+    left:100px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 1s;
+}
+.discover-downlod:hover{
+    color: white;
+    background-color: black;
+    font-size: 19px;
+    padding: 27px 33px;
+    letter-spacing: 0;
+    transition: 1s;
+
+    
+}
+.discover-right{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+/* discover images and emoji styles */
+
+.discover-mobile-image{
+    width: 300px;
+    height: 550px;
+    position: relative;
+    top: 20%;
+    left: 28%;
+    background-image: url(../images/discover\ images/Web-1st-19-p-1600.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.discover-submobile-image{
+    width: 170px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    top:40%;
+    left: 17%;
+   
+    background-image: url(../images/discover\ images/iWatch-20-p-500.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.discover-emoji-one{
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/discover\ images/image-2-cta-saasfy-template.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 40px;
+    position: absolute;
+    top: 68%;
+    left: 23%;
+}
+.discover-emoji-two{
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/discover\ images/image-3-cta-saasfy-template.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 40px;
+    position: absolute;
+    top: 80%;
+    left: 21%;
+    z-index: 100;
+}
+
