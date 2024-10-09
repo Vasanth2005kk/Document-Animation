@@ -61,6 +61,8 @@
 
 .item.active {
     opacity: 1;
+    transition: 0.10s;
+    animation-name: opacity_animat;
 }
 
 .item img {
@@ -68,3 +70,19 @@
     height: 600px;
 }
 
+
+
+@keyframes opacity_animat{ 
+    25%{
+        opacity:0.3;
+    }
+    50%{
+        opacity:0.6;
+    }
+    75%{
+        opacity:0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
