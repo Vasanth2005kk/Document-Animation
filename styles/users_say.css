@@ -1,12 +1,227 @@
-.user-say{
+.user-say {
     width: 100%;
-    height: 100px;
+    height: 180px;
     text-align: center;
-    font-size: 70px;
     margin-top: 18%;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-style: normal;
-    font-size: 75px;
+    font-size: 80px;
+    /* background-color: red; */
+}
+
+/* user say horizontal auto scroll animation */
+
+.usersay-one {
+    width: 400px;
+    height: 350px;
+    position: relative;
+    top: 10px;
+    border-radius: 39px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 2px 6px 0 rgba(20, 20, 43, .08);
+}
+
+.users-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-image: url(../images/users_say/avatar-2-testimonials-saasfy-template.png);
+    background-size: cover;
+    border-radius: 99px;
+}
+
+.users-name {
+    color: #505050;
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.users-name p span {
+    font-weight: bold;
+    font-size: 23px;
+    color: black;
+}
+
+.users-say-text {
+    color: #505050;
+    width: 370px;
+    height: 120px;
+    padding: 20px;
+    margin-top: 130px;
+    border-radius: 10px;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.users-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 35px;
+}
+
+.users-icon a img {
+    width: 35px;
+    height: 35px;
+}
+
+.users-icon a img:hover {
+    width: 37px;
+    height: 37px;
+    transition: 0.2s;
+}
+
+.horizontal-scrolling-items {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* background-color: red; */
+}
+
+.horizontal-scrolling-items .usersay-one {
+    scroll-snap-align: start;
+
+}
+
+.horizontal-scrolling-items {
+    display: flex;
+    font-size: 40px;
+    width: 2000px;
+    padding: 20px;
+    padding-bottom: -10px;
+    animation-name: infiniteScroll-one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* background-color: red;    */
+}
+
+.horizontal-scrolling-items:nth-child(3) {
+    margin-left: -20%;
+}
+
+@keyframes infiniteScroll-one {
+    5% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10%);
+    }
+
+    80% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.shadow-box-left {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: -5%;
+    background-image: linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0));
+    z-index: 9;
+}
+
+.shadow-box-right {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    right: -5%;
+    background-image: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0));
+    z-index: 10;
+}
+
+.horizontal-scrolling-items-one {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.horizontal-scrolling-items-one .usersay-one {
+    scroll-snap-align: start;
+
+}
+
+.horizontal-scrolling-items-one {
+    display: flex;
+    font-size: 40px;
+    width: 2000px;
+    padding: 20px;
+    padding-bottom: -10px;
+    animation-name: infiniteScroll-two;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* background-color: red;    */
+}
+
+@keyframes infiniteScroll-two {
+    5% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10%);
+    }
+
+    80% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.horizontal-scrolling-items-one:nth-child(3) {
+    margin-left: -19%;
+}
+
+
+.downbtn {
+    background-color: black;
+    width: 15%;
+    color: white;
+    padding: 28px 24px;
+    border-radius: 40px;
+    position: relative;
+    position: absolute;
+    left:43%;
+    margin-top: 100px;
+    cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.downbtn:hover {
+    font-size: 19px;
+    padding: 26px 22px;
+    letter-spacing: 1;
+    opacity: 0.5;
 }
