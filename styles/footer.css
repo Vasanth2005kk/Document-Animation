@@ -26,7 +26,8 @@
     top: 30%;
     left: 3%;
 }
-.footer-download-btn{
+
+.footer-download-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,22 +37,23 @@
     background-color: white;
     color: black;
     position: absolute;
-    top: 40%;
+    top: 43%;
     left: 8%;
     font-size: 20px;
     line-height: 1.667em;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 6px 0 rgba(20,20,43,.06);
+    box-shadow: 0 2px 6px 0 rgba(20, 20, 43, .06);
     padding: 5px 10px;
 }
 
-.footer-download-btn:hover{
+.footer-download-btn:hover {
     padding: 2px 7px;
     transition: 0.4s;
-    opacity: 0.8;   
+    opacity: 0.8;
 }
-.footer ul{
+
+.footer ul {
     padding: 10px;
     display: inline;
     position: absolute;
@@ -59,13 +61,121 @@
     left: 2%;
 
 }
+
 .footer ul li {
     margin-left: 20px;
     display: inline-block;
 }
 .footer ul li a{
     text-decoration: none;
-    padding: 15px 20px;
-    background-color: white;
-    border-radius: 50%;
+}
+
+.footer ul li a i{
+    padding:8px 10px;
+    background-color: #646464;
+    border-radius:999px;
+    font-size: 25px;
+    text-align: center;
+    color: wheat;
+}
+
+.footer ul li a :hover {
+    background-color: #fff;
+    color: #040404;
+    transition: 0.5s;
+}
+
+.Menu-Contact-Us{
+    font-size: 20px;
+    font-weight: 700;
+}
+.Menu-Contact-Us .one{
+    position: absolute;
+    top: 23%;
+    right: 40%;
+}
+.Menu-Contact-Us .Menu-one{
+    position: absolute;
+    top: 30%;
+    left: 54%;
+    cursor: pointer;
+}
+.Menu-Contact-Us .Menu-one li {
+    display: block;
+    margin-top: 30px;
+
+}
+.Menu-Contact-Us .Menu-one li:hover {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    opacity: 0.6;
+    transition: 0.5s;
+
+}
+
+.Menu-Contact-Us .Menu-two{
+    position: absolute;
+    top: 30%;
+    left: 68%;
+    cursor: pointer;
+}
+.Menu-Contact-Us .Menu-two li {
+    display: block;
+    margin-top: 30px;
+
+}
+.Menu-Contact-Us .Menu-two li:hover {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    opacity: 0.6;
+    transition: 0.5s;
+
+}
+
+.Menu-Contact-Us .two{
+    position: absolute;
+    top: 23%;
+    right: 11%;
+}
+
+.Menu-Contact-Us .Contact-Us{
+    position: absolute;
+    top: 30%;
+    left: 79%;
+    cursor: pointer;
+}
+.Menu-Contact-Us .Contact-Us li {
+    display: block;
+    margin-top: 30px;
+
+}
+.Menu-Contact-Us .Contact-Us li:hover {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    opacity: 0.6;
+    transition: 0.5s;
+
+}
+
+.footer-bottom{
+    width: 92%;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    left: 4%;
+    border-top: 1px solid #646464;
+    font-size: 20px;
+}
+.footer-bottom .one{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.footer-bottom .two{
+    position: absolute;
+    top: 50px;
+    right: 35px;
 }
