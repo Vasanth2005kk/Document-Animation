@@ -84,53 +84,118 @@
     transition: 0.2s;
 }
 
-.horizontal-scrolling-items {
+/* user say horizontal auto scroll animation container one */
+.container-one {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.horizontal-scrolling-items-one {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    /* background-color: red; */
 }
 
-.horizontal-scrolling-items .usersay-one {
+.horizontal-scrolling-items-one .usersay-one {
     scroll-snap-align: start;
-
 }
 
-.horizontal-scrolling-items {
-    display: flex;
-    font-size: 40px;
-    width: 2000px;
-    padding: 20px;
-    padding-bottom: -10px;
-    animation-name: infiniteScroll-one;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    /* background-color: red;    */
-}
-
-.horizontal-scrolling-items:nth-child(3) {
+.horizontal-scrolling-items-one:nth-child(3) {
     margin-left: -20%;
 }
 
-@keyframes infiniteScroll-one {
-    5% {
+.horizontal-scrolling-items-one {
+    display: flex;
+    animation: scroll-left-right-one 30s ease-in-out infinite;
+    width: max-content;
+    padding: 20px;
+}
+
+.usersay-one {
+    min-width: 300px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+
+@keyframes scroll-left-right-one {
+    0% {
         transform: translateX(0);
     }
 
-    50% {
+    25% {
         transform: translateX(-10%);
     }
 
-    80% {
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
         transform: translateX(10%);
     }
 
     100% {
         transform: translateX(0);
     }
-
 }
+
+/* user say horizontal auto scroll animation container two */
+.container-two {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.horizontal-scrolling-items-two {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.horizontal-scrolling-items-two .usersay-one {
+    scroll-snap-align: start;
+}
+
+.horizontal-scrolling-items-two:nth-child(3) {
+    margin-left: -20%;
+}
+
+.horizontal-scrolling-items-two {
+    display: flex;
+    animation: scroll-left-right-two 30s ease-in-out infinite;
+    width: max-content;
+    padding: 20px;
+}
+
+.horizontal-scrolling-items-two:nth-child(3) {
+    margin-left: -19%;
+}
+
+@keyframes scroll-left-right-two {
+    0% {
+        transform: translateX(2%);
+    }
+
+    25% {
+        transform: translateX(10%);
+    }
+
+    50% {
+        transform: translateX(3%);
+    }
+
+    75% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(2%);
+    }
+}
+
+/* right and left shadow the continer */
 
 .shadow-box-left {
     position: absolute;
@@ -149,54 +214,6 @@
     background-image: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0));
     z-index: 10;
 }
-
-.horizontal-scrolling-items-one {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.horizontal-scrolling-items-one .usersay-one {
-    scroll-snap-align: start;
-
-}
-
-.horizontal-scrolling-items-one {
-    display: flex;
-    font-size: 40px;
-    width: 2000px;
-    padding: 20px;
-    padding-bottom: -10px;
-    animation-name: infiniteScroll-two;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    /* background-color: red;    */
-}
-
-@keyframes infiniteScroll-two {
-    5% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(10%);
-    }
-
-    80% {
-        transform: translateX(-10%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-
-}
-
-.horizontal-scrolling-items-one:nth-child(3) {
-    margin-left: -19%;
-}
-
 
 .downbtn {
     background-color: black;
