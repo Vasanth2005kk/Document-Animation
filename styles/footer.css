@@ -1,5 +1,71 @@
-.footer{
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.footer {
     width: 100%;
-    height: 700px;
+    height: 660px;
     background-color: black;
+    margin-top: 25%;
+    border-radius: 90px 90px 0 0;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    position: relative;
+}
+
+.footer p {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.667em;
+    font-weight: 500;
+    padding: 10px;
+    top: 30%;
+    left: 3%;
+}
+.footer-download-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+    border-radius: 48px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-size: 20px;
+    line-height: 1.667em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px 0 rgba(20,20,43,.06);
+    padding: 5px 10px;
+}
+
+.footer-download-btn:hover{
+    padding: 2px 7px;
+    transition: 0.4s;
+    opacity: 0.8;   
+}
+.footer ul{
+    padding: 10px;
+    display: inline;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+
+}
+.footer ul li {
+    margin-left: 20px;
+    display: inline-block;
+}
+.footer ul li a{
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 50%;
 }
